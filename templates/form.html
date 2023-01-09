@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+      
+       <div class="container row mx-auto my-3  justify-content-center bg-secondary h5">
+        <form action="register" class="container row col-6" method="POST" enctype='multipart/form-data'>
+            {% csrf_token %}
+            <div class=" col-12 my-3">
+                <label for="email">name :</label>
+                <input type="text" class="form-control" name="name" id="name">
+              </div>
+      <div class=" col-12 my-3">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" name="email" id="name">
+      </div>
+      <div class=" col-12 my-3">
+        <label for="pwd">phone</label>
+        <input type="text" class="form-control" name="phone" id="phone">
+      </div>
+      <div class=" col-12 my-3">
+        <label for="pwd">Password:</label>
+        <input type="password"class="form-control" name="password" id="pwd">
+      </div>
+      <div class=" col-12 my-3">
+        <label for="pwd">DOB</label>
+        <input type="text" class="form-control" name="DOB" id="dob">
+      </div>
+      <div class=" col-12 my-3">
+        <label for="pwd">propic</label>
+        <input type="file" class="form-control"  name="propic" id="propic">
+      </div>
+      
+      <button type="submit" class="btn btn-danger  my-4">Submit</button>
+    </form>
+       </div>
+        <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
